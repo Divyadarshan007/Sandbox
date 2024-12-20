@@ -99,6 +99,9 @@
 .align-center {
   align-items: center;
 }
+.px-10{
+  padding: 10px;
+}
 
 .gap-30 {
   gap: 30px;
@@ -107,12 +110,17 @@
 .gap-20 {
   gap: 30px;
 }
+.flex{
+  display: flex;
+}
+
 
 .main-banner {
   background-image: url("../images/bg4.jpg");
   background-repeat: no-repeat;
   padding: 150px 0;
   background-size: cover;
+  height: 100vh;
   filter: opacity(0.9);
 }
 
@@ -226,10 +234,7 @@
   color: #ffffff;
 }
 
-.image img {
-  width: 530px;
-  border-radius: 5px;
-}
+
 
 header {
   position: absolute;
@@ -246,14 +251,16 @@ header {
   padding: 0 80px;
   /* margin-left: 90px; */
 }
+.z-99{
+  z-index: 999;
+}
 
 .card {
-  width: 258px;
   background-color: #ffffff;
   padding: 40px;
   border: 1px solid rgb(228, 228, 228);
   border-radius: 10px;
-  z-index: 999;
+
 }
 
 .bg-circle1 {
@@ -373,10 +380,7 @@ header {
   left: 37px;
 }
 
-.banner-image img {
-  width: 750px;
-  padding: 0 35px;
-}
+
 
 .main-content {
   padding: 0 35px;
@@ -521,8 +525,7 @@ header {
 .card-content .card-image img {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  width: 400px;
-  height: auto;
+
   transition: 0.2s all linear;
 }
 
@@ -535,9 +538,9 @@ header {
 }
 
 .bg-design::before {
-  content: "";
-  width: 300px;
-  height: 415px;
+  content: '';
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
   top: 15px;
   left: 15px;
@@ -607,12 +610,6 @@ header {
 }
 
 .banner-image2 {
-  background-image: url("../images/about12.jpg");
-  width: 600px;
-  border-radius: 7px;
-  height: auto;
-  /* background-size: contain; */
-  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -622,8 +619,8 @@ header {
   height: 90%;
   background-color: #f2f3fb;
   position: absolute;
-  right: -40px;
-  top: 80px;
+  right: -10px;
+  top: 70px;
   border-radius: 10px;
   z-index: -1;
 }
@@ -678,9 +675,12 @@ header {
   background-repeat: no-repeat;
   margin: 0 140px;
   transform: translateY(50%);
-
   top: 350px;
   border-radius: 10px;
+}
+
+.dev-image img{
+  display: block;
 }
 
 .sixth-banner .image-wrapper .image-wrapper-content {
